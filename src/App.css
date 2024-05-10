@@ -38,11 +38,12 @@
 .inputBox input,
 .inputBox1 input,
 .inputBox2 input {
+  caret-color: white;
   width: 100%;
   padding: 10px;
   outline: none;
   border: none;
-  color: #000;
+  color: #ffffff;
   font-size: 1em;
   background: transparent;
   border-left: 2px solid #ffffff;
@@ -108,7 +109,7 @@
 .inputBox1 input:focus,
 .inputBox2 input:valid,
 .inputBox2 input:focus {
-  border: 2px solid #000;
+  border: 2px solid #ffffff;
   border-radius: 8px;
 }
 
@@ -140,12 +141,19 @@
   transform: translate(-50%, -50%);
 }
 
-.body-class{
-  background-image: url("https: //media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExZnpvd3A5MTQzN2E3cTI0ZGRoYzNhbnAyNW0wbDFlYjBxeHpsaTA3eiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/9ZsHm0z5QwSYpV7g01/giphy.gif");
-  background-size: cover;
-  background-color: #c8c8c8;
-}
-
 .button {
   margin-top: 20px;
+}
+
+body {
+  /* background-image: url(giphy2.gif); */
+  background-size: cover;
+}
+
+.upiimg {
+  width: 250px;
+}
+
+.payment {
+  display: none;
 }
