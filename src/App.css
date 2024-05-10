@@ -17,37 +17,32 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 15%;
-  width: 20%;
+  min-height: 450px;
+  min-width: 300px;
   flex-direction: column;
-  gap: 3em;
-  border-radius: 10%;
-  background: #081c36c8;
+  gap: 35px;
+  border-radius: 15px;
+  background: #081c36c3;
   /* box-shadow: 10px 10px 24px #c8c8c85b, -10px -10px 24px #fefefe5b; */
   border-radius: 8px;
   -webkit-box-shadow: 0px 0px 181px 7px rgba(97, 0, 207, 0.76);
     -moz-box-shadow: 0px 0px 181px 7px rgba(97, 0, 207, 0.76);
     box-shadow: 0px 0px 181px 7px rgba(97, 0, 207, 0.76);
-  position: absolute;
-  width: 30%;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
 }
 
 .inputBox,
 .inputBox1,
 .inputBox2 {
   position: relative;
-  width: 50%;
+  width: 250px;
 }
 
 .inputBox input,
 .inputBox1 input,
 .inputBox2 input {
   caret-color: white;
-  width: 90%;
-  padding: 5%;
+  width: 100%;
+  padding: 10px;
   outline: none;
   border: none;
   color: #ffffff;
@@ -138,6 +133,14 @@
 .enter:hover {
   background-color: rgb(0, 0, 0);
   color: white;
+}
+
+.card {
+  position: absolute;
+  width: 400px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .button {
