@@ -1,0 +1,50 @@
+// import React, { useState } from 'react';
+// import app from '../config/firebase';
+// import { getFirestore, collection, addDoc } from "firebase/firestore";
+
+// const InputForm = () => {
+
+//     const [name, setName] = useState('');
+//     const [email, setEmail] = useState('');
+//     const [phone, setPhone] = useState('');
+//     const [message, setMessage] = useState('');
+//     const [isLoading, setIsLoading] = useState(false);
+
+//     const handleSubmit = async (e) => {
+
+//         try {
+//         const db = getFirestore(app); // Get Firestore instance
+//         const userRef = collection(db, "testData"); // Reference to your collection
+        
+//         const time = Math.floor(Date.now() / 1000);
+//         console.log(time);
+
+//         // Add user data to Firestore
+//         await addDoc(userRef, {
+//             email,
+//             name,
+//             phone,
+//             time
+//         });
+
+//         // setName(''); // Clear form fields after successful submission
+//         // setEmail('');
+//         // setPhone('');
+//         setMessage('User data submitted successfully!'); // Success message
+//         } catch (error) {
+//         console.error("Error adding document:", error);
+//         setMessage('An error occurred. Please try again later.'); // Error message
+//         } finally {
+//         setIsLoading(false); // Hide loading indicator after submission
+//         }
+//     }
+
+//     return (
+//         <form onSubmit={handleSubmit}>
+//             <label>Name : </label>
+//             <input type="text" placeholder='Enter name...'></input>
+//         </form>
+//     )
+// };
+
+// export default InputForm;
