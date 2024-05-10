@@ -13,6 +13,17 @@
   margin-top: 1.5em;
 }
 
+.message {
+  text-align: center;
+  color: #96ffbb3d;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  display: block;
+  font-weight: bold;
+  margin-top: 1.5em;
+  padding: 2%;
+}
+
 .card {
   display: flex;
   justify-content: center;
@@ -126,7 +137,6 @@
   text-transform: uppercase;
   font-size: 10px;
   letter-spacing: 2px;
-  margin-bottom: 3em;
   color: white;
 }
 

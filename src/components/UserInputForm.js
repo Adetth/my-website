@@ -38,7 +38,7 @@ const UserInputForm = () => {
       // setName(''); // Clear form fields after successful submission
       // setEmail('');
       // setPhone('');
-      setMessage('User data submitted successfully!'); // Success message
+      setMessage('Data recorded successfully!'); // Success message
     } catch (error) {
       console.error("Error adding document:", error);
       setMessage('An error occurred. Please try again later.'); // Error message
@@ -68,8 +68,8 @@ const UserInputForm = () => {
                 </div>
                 <div class="button">
                 <button type="submit" class="enter" disabled={isLoading}>{isLoading ? 'Submitting...' : 'Submit'}</button>
-                {message && <p className="message">{message}</p>}
                 </div>
+                {message && <p className="message">{message}</p>}
             </div>
 
     </form>
