@@ -4,7 +4,7 @@
 
 .singup {
   text-align: center;
-  color: #ffffff;
+  color: #ffffffcc;
   text-transform: uppercase;
   letter-spacing: 2px;
   display: block;
@@ -151,9 +151,10 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  animation: fadeInAnimation ease 1s;
 }
 
-.button {
+.button-content {
   margin-top: 20px;
 }
 
@@ -168,4 +169,82 @@ body {
 
 .payment {
   display: none;
+}
+
+.button-content{
+  justify-content: flex-end;
+  display: flex;
+  margin-right: 20px;
+}
+
+.header{
+  background-image: linear-gradient(to top right, #03063755, #3C075355, #72045555);
+  padding: 25px;
+  font-size: medium;
+  color: white;
+  border: 0;
+}
+
+.buttonItself,.form-link{
+  cursor: pointer;
+  text-decoration: none;
+  color: #ffffffcc;
+  font-size: 24px;
+  padding: 16px 40px;
+  display: inline-block;
+  font-family: Roobert-Bold, sans-serif;
+  padding: 16px 30px;
+  text-align: center;
+  border-color: transparent;
+  background-color: rgba(196, 196, 196, 0.3);
+  border-radius: 10px;
+}
+
+.buttonItself:hover,.form-link:hover {
+  background-color: rgba(128, 192, 144, 0.3);
+}
+
+.entireContent{
+  -webkit-box-align: center;
+  box-sizing: border-box;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+.letter-content{
+  padding: 25px;
+  height: 100px;
+  animation: fadeInAnimation ease 1s;
+  font-family: Roobert-Heavy, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 300%;
+  line-height: 1;
+  text-align: left;
+  color: white;
+}
+
+.sub-letter-content{
+  padding: 25px;
+  animation: fadeInAnimation ease 1s;
+  font-family: Roobert-Heavy, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 150%;
+  line-height: 0.5;
+  text-align: left;
+  color: white;
+}
+
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
 }

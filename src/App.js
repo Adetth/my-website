@@ -1,9 +1,10 @@
 import './App.css';
-import UserInputForm from './components/UserInputForm';
+import LandingPage from './components/LandingPage';
 
 function App() {
   return (
-    <UserInputForm />
+    
+    <LandingPage  />
   );
 }
 

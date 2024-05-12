@@ -49,30 +49,30 @@ const UserInputForm = () => {
 
   return (
     <body class="body-class">
-    <form onSubmit={handleSubmit}>
-      <div class="card">
-                <a class="singup">Enter your details</a>
-                <div class="inputBox1">
-                    <input type="text" value={name} onChange={(e) => setName(e.target.value)} required />
-                    <span class="user">Full name</span>
-                </div>
-        
-                <div class="inputBox2">
-                    <input value={email} onChange={(e) => setEmail(e.target.value)} required />
-                    <span>Email</span>
-                </div>
-        
-                <div class="inputBox">
-                    <input type="tel" value={phone} onChange={(e) => setPhone(e.target.value)} required />
-                    <span>Phone number</span>
-                </div>
-                <div class="button">
-                <button type="submit" class="enter" disabled={isLoading}>{isLoading ? 'Submitting...' : 'Submit'}</button>
-                </div>
-                {message && <p className="message">{message}</p>}
+      <form onSubmit={handleSubmit}>
+        <div class="card">
+            <a class="singup">Enter your details</a>
+            <div class="inputBox1">
+              <input type="text" value={name} onChange={(e) => setName(e.target.value)} required />
+              <span class="user">Full name</span>
+            </div>
+    
+            <div class="inputBox2">
+              <input value={email} onChange={(e) => setEmail(e.target.value)} required />
+              <span>Email</span>
+            </div>
+    
+            <div class="inputBox">
+              <input type="tel" value={phone} onChange={(e) => setPhone(e.target.value)} required />
+              <span>Phone number</span>
             </div>
 
-    </form>
+            <div class="button">
+              <button type="submit" class="enter" disabled={isLoading}>{isLoading ? 'Submitting...' : 'Submit'}</button>
+            </div>
+            {message && <p className="message">{message}</p>}
+        </div>
+      </form>
     </body>
   );
 };

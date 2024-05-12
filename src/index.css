@@ -5,12 +5,59 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-image: url("./components/stars2.gif");
-  background-size: cover;
 }
+
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
 
+/* Desktop-only view. 
+ * Largest mobile view is iPad Pro with 1366 in landscape mode
+ */
+@media only screen and (min-width:1367px) {
+  :root {
+    --bg-image-jpg: url('./components/stars1.gif');
+    --bg-size: cover;
+    --bg-pos: center center;
+  }
+}
+
+/* Large mobile device screens */
+@media only screen and (max-width:1366px) {
+  :root {
+    --bg-image-jpg: url('./components/stars1.gif');
+    --bg-pos: top center;
+    --bg-size: 100vw auto;
+  }
+}
+
+/* Load a smaller image for smaller screens */
+@media only screen and (max-width:970px) {
+  :root {
+    --bg-image-jpg: url('./components/stars1.gif');
+  }
+}
+
+/* Smallest image for phone screens */
+@media only screen and (max-width:500px) {
+  :root {
+    --bg-image-jpg: url('./components/stars1.gif');
+  }
+}
+
+body {
+  background-image: url('./components/stars1.gif');
+  margin: 0px auto;
+  padding: 0px auto;
+}
+
+.webp body {
+  background: var(--bg-image-webp) var(--bg-pos) fixed no-repeat;
+  background-size: var(--bg-size);
+}
+
+.no-webp body {
+  background: var(--bg-image-jpg) var(--bg-pos) fixed / var(--bg-size) no-repeat;
+}
