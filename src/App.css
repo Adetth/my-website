@@ -303,3 +303,8 @@ body {
   text-align: center;
   padding: 30%;
 }
+
+.imgClass{
+  width: 100%;
+  height: 100%;
+}
