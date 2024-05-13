@@ -1,11 +1,12 @@
-import './App.css';
-import LandingPage from './components/LandingPage';
+import React from 'react';
+import Farewell from './components/farewell';
 
-function App() {
+const App = () => {
   return (
-    
-    <LandingPage  />
+    <div>
+      <Farewell />
+    </div>
   );
-}
+};
 
 export default App;
