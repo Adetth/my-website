@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import '../App.css';
 import '../index.css'
-import { useNavigate } from 'react-router-dom';
+import giphy5 from './giphy5.gif'
 import Form from './Form';
 
 const Farewell = () => {
@@ -53,15 +53,15 @@ function setOpacity() {
       div1.style.opacity = "1";
     }
 }
-const navigate = useNavigate();
-const handleFormClick = () => {
-    navigate('https://forms.gle/P5UA25T2sw1FvS7F9'); // Replace with your form link
+
+const redirectToForm = () => {
+    window.location.href = 'https://forms.gle/P5UA25T2sw1FvS7F9'; // Replace with your actual form link
   };
 
     return (
     <div>
         <header className="button">
-             <button className="enterOne" onClick={handleFormClick}>Contribute</button>
+             <button className="enterOne" ><a className='anchorClass' href='https://forms.gle/P5UA25T2sw1FvS7F9'>Contribute</a></button>
         </header>
         <header className="button1">
             <button className="enterTwo" onClick={handleForm}>Register</button>
