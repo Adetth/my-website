@@ -295,3 +295,11 @@ body {
 .atag{
   display: inline-block;
 }
+
+.toast{
+  z-index: 11;
+  color: white;
+  font-size: medium;
+  text-align: center;
+  padding: 30%;
+}
